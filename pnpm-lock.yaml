@@ -9,7 +9,6 @@ specifiers:
   '@storybook/cli': ^6.5.10
   '@storybook/manager-webpack5': ^6.5.10
   '@storybook/node-logger': ^6.5.10
-  '@storybook/preset-create-react-app': ^4.1.2
   '@storybook/react': ^6.5.10
   '@storybook/testing-library': ^0.0.13
   '@testing-library/jest-dom': ^5.16.5
@@ -43,7 +42,6 @@ devDependencies:
   '@storybook/cli': 6.5.10_ehxjltspajcysklsgue4g44hsy
   '@storybook/manager-webpack5': 6.5.10_ehxjltspajcysklsgue4g44hsy
   '@storybook/node-logger': 6.5.10
-  '@storybook/preset-create-react-app': 4.1.2_vo5mk77fz7ytnf53csu7siqfsy
   '@storybook/react': 6.5.10_5dumfp5bl6gzicrnzzztx25ixm
   '@storybook/testing-library': 0.0.13_biqbaboplfbrettd7655fr4n2y
   '@testing-library/jest-dom': 5.16.5
@@ -2306,45 +2304,6 @@ packages:
       rimraf: 3.0.2
     dev: true
 
-  /@pmmmwh/react-refresh-webpack-plugin/0.5.7_jw65f7ntaswmo2djm5m3s4rnbq:
-    resolution: {integrity: sha512-bcKCAzF0DV2IIROp9ZHkRJa6O4jy7NlnHdWL3GmcUxYWNjLXkK5kfELELwEfSP5hXPfVL/qOGMAROuMQb9GG8Q==}
-    engines: {node: '>= 10.13'}
-    peerDependencies:
-      '@types/webpack': 4.x || 5.x
-      react-refresh: '>=0.10.0 <1.0.0'
-      sockjs-client: ^1.4.0
-      type-fest: '>=0.17.0 <3.0.0'
-      webpack: '>=4.43.0 <6.0.0'
-      webpack-dev-server: 3.x || 4.x
-      webpack-hot-middleware: 2.x
-      webpack-plugin-serve: 0.x || 1.x
-    peerDependenciesMeta:
-      '@types/webpack':
-        optional: true
-      sockjs-client:
-        optional: true
-      type-fest:
-        optional: true
-      webpack-dev-server:
-        optional: true
-      webpack-hot-middleware:
-        optional: true
-      webpack-plugin-serve:
-        optional: true
-    dependencies:
-      ansi-html-community: 0.0.8
-      common-path-prefix: 3.0.0
-      core-js-pure: 3.25.0
-      error-stack-parser: 2.1.4
-      find-up: 5.0.0
-      html-entities: 2.3.3
-      loader-utils: 2.0.2
-      react-refresh: 0.14.0
-      schema-utils: 3.1.1
-      source-map: 0.7.4
-      webpack: 5.74.0
-    dev: true
-
   /@pmmmwh/react-refresh-webpack-plugin/0.5.7_metx475lqcp4j5c75za4zf7xbi:
     resolution: {integrity: sha512-bcKCAzF0DV2IIROp9ZHkRJa6O4jy7NlnHdWL3GmcUxYWNjLXkK5kfELELwEfSP5hXPfVL/qOGMAROuMQb9GG8Q==}
     engines: {node: '>= 10.13'}
@@ -3713,37 +3672,6 @@ packages:
     resolution: {integrity: sha512-xqUdpnFHYkn8MgtV+QztvIsRWa6jQUk7QT1Mu17Y0S7PbslNGsuskRPHenHhACXBJF+TM86R+4BaAhnVYTmElw==}
     dependencies:
       core-js: 3.25.0
-    dev: true
-
-  /@storybook/preset-create-react-app/4.1.2_vo5mk77fz7ytnf53csu7siqfsy:
-    resolution: {integrity: sha512-5uBZPhuyXx4APgLZnhiZ/PqYYprBua5CabQCfAlk+/9V4vSpX+ww+XP4Rl8Ifc/nf/HktgwtJFH4HXrZGRKC4w==}
-    peerDependencies:
-      '@babel/core': '*'
-      '@storybook/node-logger': '*'
-      '@storybook/react': '>=5.2'
-      react-scripts: '>=5.0.0'
-    dependencies:
-      '@babel/core': 7.19.0
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.7_jw65f7ntaswmo2djm5m3s4rnbq
-      '@storybook/node-logger': 6.5.10
-      '@storybook/react': 6.5.10_5dumfp5bl6gzicrnzzztx25ixm
-      '@storybook/react-docgen-typescript-plugin': 1.0.2-canary.6.9d540b91e815f8fc2f8829189deb00553559ff63.0_frxmcuunqqqeqipt45cd6rjuvu
-      '@types/babel__core': 7.1.19
-      babel-plugin-react-docgen: 4.2.1
-      pnp-webpack-plugin: 1.7.0_typescript@4.8.2
-      react-scripts: 5.0.1_yas6qlp6rjeowt6eciwbvt2zny
-      semver: 7.3.7
-    transitivePeerDependencies:
-      - '@types/webpack'
-      - react-refresh
-      - sockjs-client
-      - supports-color
-      - type-fest
-      - typescript
-      - webpack
-      - webpack-dev-server
-      - webpack-hot-middleware
-      - webpack-plugin-serve
     dev: true
 
   /@storybook/preview-web/6.5.10_biqbaboplfbrettd7655fr4n2y:
@@ -12286,15 +12214,6 @@ packages:
 
   /pnp-webpack-plugin/1.6.4_typescript@4.8.2:
     resolution: {integrity: sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==}
-    engines: {node: '>=6'}
-    dependencies:
-      ts-pnp: 1.2.0_typescript@4.8.2
-    transitivePeerDependencies:
-      - typescript
-    dev: true
-
-  /pnp-webpack-plugin/1.7.0_typescript@4.8.2:
-    resolution: {integrity: sha512-2Rb3vm+EXble/sMXNSu6eoBx8e79gKqhNq9F5ZWW6ERNCTE/Q0wQNne5541tE5vKjfM8hpNCYL+LGc1YTfI0dg==}
     engines: {node: '>=6'}
     dependencies:
       ts-pnp: 1.2.0_typescript@4.8.2
