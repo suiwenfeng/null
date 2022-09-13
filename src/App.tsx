@@ -1,7 +1,5 @@
-import React from 'react';
 import { Routes, Route, Link } from "react-router-dom";
-import { ReactComponent as LogoSvg } from "./stories/assets/logo.svg"
-import { LogoIcon } from "./stories/components/Icon"
+import { NavLink } from "./stories/components/Link"
 import './App.css';
 
 function App() {
@@ -25,9 +23,9 @@ function Home() {
       </main>
       <nav>
         <Link to="/about">About</Link>
-        <LogoIcon link="#" className="a">
-          <LogoSvg/>
-        </LogoIcon>
+        <NavLink href="#">
+          Test
+        </NavLink>
       </nav>
     </>
   );
@@ -45,7 +43,6 @@ function About() {
       </main>
       <nav>
         <Link to="/">Home</Link>
-        <LogoSvg/>
       </nav>
     </>
   );
