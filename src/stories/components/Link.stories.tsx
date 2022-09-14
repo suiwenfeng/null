@@ -8,7 +8,7 @@ export default {
   subcomponents: { NavLink, LogoLink, SocialLink },
 } as ComponentMeta<typeof Link>;
 
-const Template: ComponentStory<typeof Link> = (args) => <Link {...args}><LogoSvg/></Link>;
+const Template: ComponentStory<typeof Link> = (args) => <Link {...args}><LogoSvg width={40} height={40}/></Link>;
 
 export const Custom = Template.bind({});
 

@@ -17,7 +17,7 @@ export const NavLink = styled(Link)`
 `
 
 export const LogoLink = styled(Link)`
-
+  display: flex;
 `;
 
 export const SocialLink = styled(Link)`

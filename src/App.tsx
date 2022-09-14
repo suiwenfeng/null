@@ -1,6 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
-import { NavLink } from "./stories/components/Link"
 import './App.css';
+import { PureNav } from "./stories/components/layout/Nav";
 
 function App() {
   return (
@@ -23,9 +23,7 @@ function Home() {
       </main>
       <nav>
         <Link to="/about">About</Link>
-        <NavLink href="#">
-          Test
-        </NavLink>
+        <PureNav items={[{href: "/about", text: "About"}, {href: "/project", text: "Project"}]} />
       </nav>
     </>
   );
