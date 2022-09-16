@@ -59,8 +59,16 @@ export const PureHome = styled(Home)`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 0;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .buttons {
+    margin: 1rem 0;
   }
 
   img {

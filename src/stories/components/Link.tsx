@@ -21,13 +21,18 @@ export const NavLink = styled(Link)`
 `
 
 export const LogoLink = styled(Link)`
-  display: flex;
+
 `;
 
 export const SocialLink = styled(Link)`
-
+  margin: 0.5rem 1rem;
 `;
 
 export const ButtonLink = styled(Link)`
-
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 0.375rem;
+  background-color: gray;
+  color: white;
+  text-decoration: none;
 `
