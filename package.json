@@ -2,6 +2,12 @@
   "name": "@sui/blog",
   "version": "0.1.0",
   "devDependencies": {
+    "@graphql-codegen/cli": "2.12.0",
+    "@graphql-codegen/introspection": "2.2.1",
+    "@graphql-codegen/typescript": "2.7.3",
+    "@graphql-codegen/typescript-operations": "2.5.3",
+    "@graphql-codegen/typescript-react-apollo": "3.3.3",
+    "@graphql-codegen/typescript-react-query": "^4.0.1",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",
@@ -27,6 +33,10 @@
     "web-vitals": "^2.1.4"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@giscus/react": "^2.2.0",
+    "@tanstack/react-query": "^4.3.9",
+    "graphql": "^16.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
@@ -39,7 +49,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "graphql-codegen": "graphql-codegen --config codegen.yml"
   },
   "eslintConfig": {
     "extends": [

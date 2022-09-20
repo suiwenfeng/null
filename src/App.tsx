@@ -33,6 +33,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<PureHome {...homeProps}/>} />
+        <Route path="/blogs" element={<PureHome {...homeProps}/>} />
+        <Route path="/blog/:id" element={<PureHome {...homeProps}/>} />
         <Route path="/about" element={<About />} />
       </Routes>
     </>

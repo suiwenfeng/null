@@ -1,0 +1,41 @@
+query getBlogs {
+  repository(owner: "barbarbar338", name: "webpage") {
+    discussions(first: 10) {
+      nodes {
+        id
+        title
+        updatedAt
+        labels(first: 3) {
+          nodes {
+            id
+            name
+          }
+        }
+      }
+    }
+  }
+}
+
+query getBlog($id: Int!) {
+  repository(owner: "barbarbar338", name: "webpage") {
+    discussion(number: $id) {
+      title
+      author {
+        login
+        avatarUrl
+      }
+      bodyHTML
+      createdAt
+      number
+      labels(first: 3) {
+        edges {
+          node {
+            color
+            id
+            name
+          }
+        }
+      }
+    }
+  }
+}

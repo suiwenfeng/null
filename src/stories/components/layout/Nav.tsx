@@ -24,6 +24,7 @@ export const Nav = (props: NavProps & {className?: string}) => (
 export const PureNav = styled(Nav)`
   display: flex;
   list-style: none;
+  padding: 0;
 
   li {
     padding: 0 1rem;
