@@ -1,4 +1,4 @@
-import styled, { StyledProps } from "styled-components";
+import styled from "styled-components";
 import { TextLink } from "../Link";
 
 type Who = {
@@ -17,8 +17,8 @@ export type FooterProps = {
   usings: Using[];
 }
 
-export const Footer = (props: StyledProps<FooterProps>) => (
-  <footer {...props}>
+export const Footer = (props: FooterProps & {className?: string}) => (
+  <footer className={props.className}>
     <p>© {props.date} All rights reserved | Powered by <TextLink href={props.who.link}>{props.who.name}</TextLink> with {props.usings.map((using, idx) => (<>{idx ? ' and ' : ''}<TextLink href={using.link}>{using.what}</TextLink></>))}</p>
   </footer>
 )

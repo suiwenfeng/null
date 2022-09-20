@@ -2,7 +2,7 @@ import React from 'react';
 import { FooterProps, PureFooter } from '../components/layout/Footer';
 import { HeaderProps, PureHeader } from '../components/layout/Header';
 import { ButtonLink, SocialLink } from '../components/Link';
-import styled, { StyledProps } from 'styled-components';
+import styled from 'styled-components';
 
 export type SocialIcon = {
   link: string;
@@ -28,11 +28,11 @@ export type HomeProps = {
   footer: FooterProps;
 }
 
-export const Home = (props: StyledProps<HomeProps>) => (
-  <div {...props}>
+export const Home = (props: HomeProps & {className?: string}) => (
+  <div className={props.className}>
     <PureHeader {...props.header} />
     <main>
-      <img title={"logo"} src={props.main.logo} width={150} height={150}/>
+      <img title={"logo"} alt={""} src={props.main.logo} width={150} height={150}/>
       <h2>{props.main.name}</h2>
       <p>{props.main.bio}</p>
       <div className="social-icons">
@@ -73,5 +73,13 @@ export const PureHome = styled(Home)`
 
   img {
     border-radius: 50%;
+  }
+
+  h2 {
+    margin: 0.5rem 0;
+  }
+
+  p {
+    margin: 0.5rem 0;
   }
 `

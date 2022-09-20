@@ -1,24 +1,23 @@
 import styled from 'styled-components';
-import { StyledProps } from 'styled-components'; 
 
-export interface LinkProps {
+export type LinkProps = {
   href: string;
   children: React.ReactNode;
 };
 
-export const Link = (props: StyledProps<LinkProps>) => (
+export const Link = (props: LinkProps & {className?: string}) => (
   <a {...props}>
     {props.children}
   </a>
-)
+);
 
 export const TextLink = styled(Link)`
 
-`
+`;
 
 export const NavLink = styled(Link)`
 
-`
+`;
 
 export const LogoLink = styled(Link)`
 
@@ -35,4 +34,4 @@ export const ButtonLink = styled(Link)`
   background-color: gray;
   color: white;
   text-decoration: none;
-`
+`;

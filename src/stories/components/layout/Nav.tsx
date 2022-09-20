@@ -1,4 +1,4 @@
-import styled, { StyledProps } from 'styled-components';
+import styled from 'styled-components';
 import { NavLink } from '../Link';
 
 export type NavItemProps = {
@@ -11,8 +11,8 @@ export type NavProps = {
   items: NavItemProps[]
 }
 
-export const Nav = (props: StyledProps<NavProps>) => (
-  <ul {...props}>
+export const Nav = (props: NavProps & {className?: string}) => (
+  <ul className={props.className}>
     {props.items.map((item, i) => (
       <li>
         <NavLink href={item.href}>{item.text}</NavLink>
