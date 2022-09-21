@@ -8,12 +8,12 @@ export type NavItemProps = {
 }
 
 export type NavProps = {
-  items: NavItemProps[]
+  items?: NavItemProps[]
 }
 
 export const Nav = (props: NavProps & {className?: string}) => (
   <ul className={props.className}>
-    {props.items.map((item, i) => (
+    {props.items?.map((item, i) => (
       <li>
         <NavLink href={item.href}>{item.text}</NavLink>
       </li>

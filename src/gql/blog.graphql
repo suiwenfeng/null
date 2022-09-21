@@ -1,8 +1,8 @@
-query getBlogs {
+query findBlogs {
   repository(owner: "barbarbar338", name: "webpage") {
     discussions(first: 10) {
       nodes {
-        id
+        number
         title
         updatedAt
         labels(first: 3) {
@@ -16,7 +16,7 @@ query getBlogs {
   }
 }
 
-query getBlog($id: Int!) {
+query findBlog($id: Int!) {
   repository(owner: "barbarbar338", name: "webpage") {
     discussion(number: $id) {
       title
